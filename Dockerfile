@@ -9,6 +9,7 @@ COPY . .
 
 # Puisque on a défini le port dans une variable d'environnement, il faut l'informer
 ENV PORT=5000
+ENV MONGO_URL=mongodb+srv://Wbarillon:iSlande80.@cluster0-z7umv.mongodb.net/test?retryWrites=true&w=majority
 
 # Installation des package du service et lancement du serveur
 CMD npm install && node server.js
